@@ -1,0 +1,10 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/arima-v7-latin-700.woff2') format('woff2'); 
+}
+.nav-bar, h1{
+    font-family: "Arima";
+}
