@@ -6,3 +6,29 @@
 .beach{
     width: 600px;
 }
+.landing-section{
+  height: 100dvh;
+  width: 100%;
+}
+.header{
+  display: flex;
+  align-items: center;
+  height: 128px;
+  width: 100%;
+  background-color: rgba(78, 164, 135, 1);
+  position: fixed;
+}
+.header>img{
+  margin-left: 146px;
+}
+.nav-bar ul {
+  display: flex;
+  list-style-type: none; 
+  gap: 72px; 
+  padding-left: 102px;
+}
+.nav-bar a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
