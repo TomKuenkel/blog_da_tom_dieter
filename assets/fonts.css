@@ -5,6 +5,6 @@
   font-weight: 700;
   src: url('../assets/fonts/arima-v7-latin-700.woff2') format('woff2'); 
 }
-.nav-bar, h1{
+.nav-bar, h1, h2, h3{
     font-family: "Arima";
 }
