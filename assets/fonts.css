@@ -5,6 +5,23 @@
   font-weight: 700;
   src: url('../assets/fonts/arima-v7-latin-700.woff2') format('woff2'); 
 }
+@font-face {
+  font-display: swap;
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
+}
 .nav-bar, h1, h2, h3{
     font-family: "Arima";
+}
+p{
+  font-family: "Palanquin";
 }
