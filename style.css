@@ -18,7 +18,7 @@
   background-color: rgba(78, 164, 135, 1);
   position: fixed;
 }
-.header>img{
+.header>a{
   margin-left: 146px;
 }
 .nav-bar ul {
