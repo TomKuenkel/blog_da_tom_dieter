@@ -38,6 +38,10 @@
   src: url('../assets/fonts/palanquin-dark-v17-latin-600.woff2') format('woff2');
 }
 
+* {
+  line-height: 1;
+}
+
 .nav-bar,
 h1,
 h2 {
@@ -60,4 +64,14 @@ p {
 
 .left-footer > a {
   font-family: "Palanquin";
+}
+
+summary{
+  font-family: "Palanquin";
+  font-weight: 700;
+}
+
+.accordion > p {
+  font-family: "Palanquin";
+  font-weight: 500;
 }
