@@ -259,6 +259,7 @@ h2 {
   border-radius: 5px;
   padding: 4px 10px;
   color: rgba(84, 55, 13, 1);
+  margin-top: 10px;
 }
 
 details summary::marker {
@@ -275,10 +276,8 @@ details summary {
 
 details summary::after {
   content: url(./assets/icons/arrow_down.svg);
-  transition: 255ms ease;
 }
 
 details[open] summary::after {
   content: url(./assets/icons/arrow_up.svg);
-  padding-bottom: 16px;
 }
