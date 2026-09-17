@@ -12,8 +12,7 @@
 }
 
 h1 {
-  font-size: 70px;
-  padding-top: 400px;
+  font-size: 60px;
 }
 
 .landing-section > p {
@@ -49,7 +48,7 @@ h1 {
 
 .cappadocia-section {
   background-image: url(./assets/img/kapadokia.jpg);
-  margin-top: 128px;
+  margin-top: 118px;
   width: 80%;
   height: 515px;
   background-position: center;
@@ -62,11 +61,21 @@ h1 {
   background-image: url(./assets/img/Vector\ .png);
   background-repeat: no-repeat;
   display: flex;
+  width: 100%;
   height: 540px;
 }
 
 .cappadocia-text {
+  padding-top: 143px;
+  padding-left: 104px;
+  gap: 32px;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
 
+.cappadocia-text p {
+  font-size: 28px;
 }
 
 .content-section {
@@ -95,7 +104,7 @@ h1 {
   margin: 5px;
 }
 
-input[type=radio] {
+input[type="radio"] {
   background-color: white;
   appearance: none;
   width: 28px;
@@ -104,12 +113,11 @@ input[type=radio] {
   margin-bottom: 50px;
 }
 
-input[type=radio]:checked {
+input[type="radio"]:checked {
   width: 40px;
   border-radius: 20px;
   background-color: rgba(241, 201, 83, 1);
 }
-
 
 .slider_a_wrapper {
   width: 200%;
@@ -130,7 +138,7 @@ input[type=radio]:checked {
 }
 
 .slider_a input[value="two"]:checked ~ .slider_a_wrapper {
-  transform: translateX(-600px)
+  transform: translateX(-600px);
 }
 
 .beach {
@@ -185,7 +193,6 @@ input[type=radio]:checked {
   padding: 16px 24px;
 }
 
-
 .h2-design {
   display: flex;
   align-items: center;
@@ -223,7 +230,6 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 0px 120px;
-
 }
 
 .copyright {
