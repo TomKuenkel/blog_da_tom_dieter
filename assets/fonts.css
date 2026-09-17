@@ -44,7 +44,7 @@ h2 {
   font-family: "Arima";
 }
 
-h3{
+h3 {
   font-family: "Palanquin Dark";
   font-weight: 600;
 }
@@ -53,7 +53,11 @@ p {
   font-family: "Palanquin";
 }
 
-.highlights-section p{
+.highlights-section p {
   font-family: "Palanquin";
   font-weight: 500;
+}
+
+.left-footer > a {
+  font-family: "Palanquin";
 }
