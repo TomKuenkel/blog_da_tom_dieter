@@ -3,10 +3,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.beach{
-    width: 600px;
-}
-.landing-section{
+
+.landing-section {
   height: 100dvh;
   width: 100%;
   background-image: url(./assets/img/kapadokia.jpg);
@@ -17,49 +15,133 @@
   flex-direction: column;
   align-items: center;
 }
-h1{
+
+h1 {
   font-size: 70px;
   padding-top: 400px;
 }
-.landing-section>p{
+
+.landing-section > p {
   font-size: 28px;
 }
-.header{
+
+.header {
   display: flex;
   align-items: center;
   height: 128px;
   width: 100%;
   background-color: rgba(78, 164, 135, 1);
   position: fixed;
+  z-index: 3;
 }
-.header>a{
+
+.header > a {
   margin-left: 146px;
 }
+
 .nav-bar ul {
   display: flex;
-  list-style-type: none; 
-  gap: 72px; 
+  list-style-type: none;
+  gap: 72px;
   padding-left: 102px;
 }
-.nav-bar a{
+
+.nav-bar a {
   text-decoration: none;
   color: white;
   font-size: 24px;
 }
-.h2-design{
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider_a {
+  z-index: 1;
+  position: relative;
+  width: 1200px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.slider_a input {
+  z-index: 2;
+  margin: 5px;
+}
+
+input[type=radio] {
+  background-color: white;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+input[type=radio]:checked {
+  width: 40px;
+  border-radius: 20px;
+  background-color: rgba(241, 201, 83, 1);
+}
+
+
+.slider_a_wrapper {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  transition: all 255ms ease-in-out;
+}
+
+.slider_a_element {
+  width: calc(100% / 2);
+  height: 100%;
+}
+
+.slider_a input[value="one"]:checked ~ .slider_a_wrapper {
+  transform: translateX(600px);
+}
+
+.slider_a input[value="two"]:checked ~ .slider_a_wrapper {
+  transform: translateX(-600px)
+}
+
+.beach {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 100px;
+}
+
+.copenhagen {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 100px;
+}
+
+.h2-design {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-.h2-design>img{
+
+.h2-design > img {
   width: 48px;
   height: 48px;
 }
-h2{
+
+h2 {
   font-size: 52px;
 }
-.footer{
+
+.footer {
   height: 152px;
   background-color: rgba(78, 164, 135, 1);
 }
