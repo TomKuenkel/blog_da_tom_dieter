@@ -48,8 +48,8 @@ h1 {
 
 .cappadocia-section {
   background-image: url(./assets/img/kapadokia.jpg);
-  margin-top: 118px;
-  width: 80%;
+  margin-top: 128px;
+  width: 100%;
   height: 515px;
   background-position: center;
   background-size: cover;
@@ -57,11 +57,18 @@ h1 {
   align-items: start;
 }
 
+.turkey_icon{
+  z-index: 3;
+  padding-top: 284px;
+  padding-left: 444px;
+}
+
 .yellow-vector {
+  position: absolute;
   background-image: url(./assets/img/Vector\ .png);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   display: flex;
-  width: 100%;
+  width: 647px;
   height: 540px;
 }
 
@@ -70,7 +77,7 @@ h1 {
   padding-left: 104px;
   gap: 32px;
   display: flex;
-  width: 30%;
+  width: 59%;
   flex-direction: column;
 }
 
