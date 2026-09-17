@@ -1,10 +1,11 @@
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Arima';
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/fonts/arima-v7-latin-700.woff2') format('woff2'); 
+  src: url('../assets/fonts/arima-v7-latin-700.woff2') format('woff2');
 }
+
 @font-face {
   font-display: swap;
   font-family: 'Palanquin';
@@ -12,6 +13,7 @@
   font-weight: 400;
   src: url('../assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
 }
+
 @font-face {
   font-display: swap;
   font-family: 'Palanquin';
@@ -19,9 +21,26 @@
   font-weight: 700;
   src: url('../assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
-.nav-bar, h1, h2, h3{
-    font-family: "Arima";
+
+@font-face {
+  font-display: swap;
+  font-family: 'Palanquin Dark';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/palanquin-dark-v17-latin-600.woff2') format('woff2');
 }
-p{
+
+.nav-bar,
+h1,
+h2 {
+  font-family: "Arima";
+}
+
+h3{
+  font-family: "Palanquin Dark";
+  font-weight: 600;
+}
+
+p {
   font-family: "Palanquin";
 }
