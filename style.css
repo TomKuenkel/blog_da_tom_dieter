@@ -118,6 +118,7 @@ input[type="radio"] {
   height: 28px;
   border-radius: 50%;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked {
@@ -292,22 +293,37 @@ h2 {
   margin-top: 10px;
 }
 
-details summary::marker {
+summary::marker {
   display: none;
   content: "";
 }
 
-details summary {
+summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgba(84, 55, 13, 1);
+  cursor: pointer;
 }
 
 details summary::after {
   content: url(./assets/icons/arrow_down.svg);
+  transition-duration: 255ms;
 }
 
 details[open] summary::after {
-  content: url(./assets/icons/arrow_up.svg);
+  rotate: -180deg;
+}
+
+details::details-content {
+	block-size: 0;
+	overflow: hidden;
+  transition-property: block-size, content-visibility;
+	transition-duration: 300ms;
+	transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+	block-size: auto;
+	block-size: calc-size(auto, size);
 }
