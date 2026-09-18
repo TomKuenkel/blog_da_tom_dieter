@@ -66,12 +66,23 @@ p {
   font-family: "Palanquin";
 }
 
-summary{
+summary {
   font-family: "Palanquin";
   font-weight: 700;
 }
 
 .accordion > p {
+  font-family: "Palanquin";
+  font-weight: 500;
+}
+
+input {
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+label{
   font-family: "Palanquin";
   font-weight: 500;
 }
