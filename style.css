@@ -343,14 +343,14 @@ details[open]::details-content {
   margin-bottom: 16px;
 }
 
-input[type=text] {
+input[type="text"] {
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(84, 55, 13, 1);
   color: rgba(78, 164, 135, 1);
 }
 
-input[type=email] {
+input[type="email"] {
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(84, 55, 13, 1);
@@ -361,12 +361,26 @@ input[type=email] {
   display: flex;
 }
 
-input[type=submit] {
+input[type="submit"] {
   display: flex;
   width: 140px;
   padding: 10px;
   border-radius: 40px;
-  color: rgba(115, 115, 115, 1);
+  background-color: rgba(78, 164, 135);
+  color: rgb(255, 191, 0);
+  font-family: "Arima";
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: rgba(78, 164, 135);
+  color: rgb(255, 191, 0);
+  box-shadow: 0px 4px 4px 0px rgba(78, 164, 135, 0.3);
+}
+
+.submit_buttom:hover {
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.251);
+
 }
 
 label {
@@ -381,12 +395,12 @@ label {
   font-size: 15px;
 }
 
-.privat_policy  a {
+.privat_policy a {
   text-decoration: none;
   color: rgba(78, 164, 135, 1);
 }
 
-.privat_policy  p {
+.privat_policy p {
   text-decoration: none;
   color: rgba(84, 55, 13, 1);
 }
