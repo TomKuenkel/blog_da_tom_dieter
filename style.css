@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+html{
+  scroll-padding-top: 100px;
+}
+
 .landing-section {
   width: 100%;
   display: flex;
