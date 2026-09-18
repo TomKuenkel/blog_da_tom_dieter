@@ -380,11 +380,6 @@ input[type="submit"]:hover {
   box-shadow: 0px 4px 4px 0px rgba(78, 164, 135, 0.3);
 }
 
-.submit_buttom:hover {
-  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.251);
-
-}
-
 label {
   font-size: 24px;
   color: rgba(84, 55, 13, 1);
