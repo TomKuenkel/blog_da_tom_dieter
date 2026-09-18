@@ -378,6 +378,7 @@ input[type="submit"]:hover {
   background: rgba(78, 164, 135);
   color: rgb(255, 191, 0);
   box-shadow: 0px 4px 4px 0px rgba(78, 164, 135, 0.3);
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.251);
 }
 
 label {
@@ -395,6 +396,16 @@ label {
 .privat_policy a {
   text-decoration: none;
   color: rgba(78, 164, 135, 1);
+}
+
+.privat_policy a {
+  text-decoration: none;
+  color: rgba(78, 164, 135, 1);
+}
+
+.privat_policy a:hover {
+  font-family: "Palanquin Dark";
+  font-size: 90.6%;
 }
 
 .privat_policy p {
@@ -452,7 +463,6 @@ label {
 }
 
 @media screen and (min-width: 1440px) {
-
   .landing-section {
     padding: 0px calc(50% - 720px);
   }
@@ -468,5 +478,4 @@ label {
   .header > a {
     margin-left: 20px;
   }
-
 }
