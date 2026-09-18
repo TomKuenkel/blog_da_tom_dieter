@@ -276,7 +276,7 @@ details summary::after {
 }
 
 details[open] summary::after {
-  rotate: -180deg;
+  rotate: 180deg;
 }
 
 details::details-content {
