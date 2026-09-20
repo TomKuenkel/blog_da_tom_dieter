@@ -50,6 +50,21 @@ h1 {
   font-size: 24px;
 }
 
+.hover-underline {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  bottom: 46px;
+}
+
+.nav_text:hover .hover-underline {
+  opacity: 1;
+}
+
+.nav-bar a:active {
+  color: rgb(241, 201, 83);
+}
+
 .cappadocia-section {
   background-image: url(./assets/img/kapadokia.jpg);
   margin-top: 128px;
