@@ -6,6 +6,7 @@
 
 html {
   scroll-padding-top: 100px;
+  font-size: 16px;
 }
 
 .landing-section {
@@ -16,11 +17,11 @@ html {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75rem
 }
 
 .landing-section > p {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .header {
@@ -47,7 +48,7 @@ h1 {
 .nav-bar a {
   text-decoration: none;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .hover-underline {
@@ -78,10 +79,17 @@ h1 {
   align-items: start;
 }
 
-.turkey_icon {
-  z-index: 2;
-  padding-top: 284px;
-  padding-left: 444px;
+.cappadocia-text {
+  padding-top: 143px;
+  padding-left: 104px;
+  gap: 32px;
+  display: flex;
+  width: 59%;
+  flex-direction: column;
+}
+
+.cappadocia-text p {
+  font-size: 1.75rem;
 }
 
 .yellow-vector {
@@ -93,17 +101,10 @@ h1 {
   height: 540px;
 }
 
-.cappadocia-text {
-  padding-top: 143px;
-  padding-left: 104px;
-  gap: 32px;
-  display: flex;
-  width: 59%;
-  flex-direction: column;
-}
-
-.cappadocia-text p {
-  font-size: 28px;
+.turkey_icon {
+  z-index: 2;
+  padding-top: 284px;
+  padding-left: 444px;
 }
 
 .content-section {
@@ -195,16 +196,16 @@ input[type="radio"]:checked {
 }
 
 .text-block_beach > h3 {
-  font-size: 48px;
+  font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
 }
 
 .text-block_copenhagen > h3 {
-  font-size: 48px;
+  font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
 }
 
 .text-block_copenhagen,
 .text-block_beach > p {
-  font-size: 28px;
+  font-size: clamp(1.25rem, 1vw + 1rem, 1.75rem);
   padding-top: 8px;
 }
 
@@ -237,7 +238,7 @@ input[type="radio"]:checked {
 }
 
 h2 {
-  font-size: 52px;
+  font-size: clamp(2.5rem, 7vw + 1rem, 3.25rem);
 }
 
 .highlights-section {
@@ -246,7 +247,7 @@ h2 {
 }
 
 .highlights-section > p {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   color: rgba(84, 55, 13, 1);
   padding-top: 24px;
@@ -272,6 +273,10 @@ h2 {
   padding: 4px 10px;
   color: rgba(84, 55, 13, 1);
   margin-top: 10px;
+}
+
+summary{
+  font-size: 1.5rem;
 }
 
 summary::marker {
@@ -311,7 +316,7 @@ details[open]::details-content {
 
 .text_contact_form {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: rgba(84, 55, 13, 1);
   padding-top: 24px;
@@ -397,7 +402,7 @@ input[type="submit"]:hover {
 }
 
 label {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(84, 55, 13, 1);
 }
 
@@ -452,7 +457,7 @@ label {
   width: 155px;
   color: white;
   gap: 4px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .copyright > img {
@@ -468,7 +473,7 @@ label {
 .left-footer > a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .right-footer {
