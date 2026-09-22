@@ -388,6 +388,7 @@ input[type="email"] {
 
 .submit_buttom {
   display: flex;
+  cursor: pointer;
 }
 
 input[type="submit"] {
@@ -418,6 +419,49 @@ label {
   justify-content: center;
   gap: 8px;
   font-size: 15px;
+}
+
+.privat_checked {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgb(84, 55, 13);
+  border-radius: 3px;
+  cursor: pointer;
+    display: inline-block;
+  position: relative;
+}
+
+.privat_checked:hover {
+  background-color: rgb(241, 201, 83);
+}
+
+.privat_checked:checked {
+  background-color: rgb(78, 164, 135);
+  border-color: rgb(78, 164, 135);
+}
+
+.privat_checked:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 3px;
+  height: 10px;
+  border: solid rgb(241, 201, 83);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.error-message {
+  display: none;
+  font-family: "Palanquin";
+  color: rgb(185, 16, 47);
+  font-size: 15px;
+}
+
+.accept_privatpolicy_send:has(.privat_checked:user-invalid) .error-message {
+  display: block;
 }
 
 .privat_policy a {
