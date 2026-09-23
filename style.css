@@ -428,7 +428,7 @@ label {
   border: 2px solid rgb(84, 55, 13);
   border-radius: 3px;
   cursor: pointer;
-    display: inline-block;
+  display: inline-block;
   position: relative;
 }
 
@@ -454,14 +454,12 @@ label {
 }
 
 .error-message {
-  display: none;
-  font-family: "Palanquin";
+  opacity: 0;
   color: rgb(185, 16, 47);
-  font-size: 15px;
 }
 
 .accept_privatpolicy_send:has(.privat_checked:user-invalid) .error-message {
-  display: block;
+  opacity: 1;
 }
 
 .privat_policy a {
@@ -485,7 +483,7 @@ label {
   font-family: "Palanquin Dark";
 }
 
-.privat_policy p {
+.privat_policy > p {
   text-decoration: none;
   color: rgba(84, 55, 13, 1);
 }
