@@ -73,6 +73,10 @@ h1 {
   color: rgb(241, 201, 83);
 }
 
+.nav-bar a:active > .hover-underline {
+  display: none;
+}
+
 .cappadocia-section {
   background-image: url(./assets/img/kapadokia.jpg);
   margin-top: 128px;
