@@ -178,34 +178,30 @@
           <div class="form_top">
             <div class="name_form">
               <label for="name">What’s your name?</label>
-              <input type="text" name="Name" oninvalid="this.setCustomValidity('Please enter your Name.')"
+              <input type="text" name="Name" required oninvalid="this.setCustomValidity('Please enter your Name.')"
                 oninput="this.setCustomValidity('')">
             </div>
             <div class="email_form">
               <label for="email">What’s your email?</label>
-              <input type="email" name="Email" oninvalid="this.setCustomValidity('Please enter your Email.')"
+              <input type="email" name="Email" required oninvalid="this.setCustomValidity('Please enter your Email.')"
                 oninput="this.setCustomValidity('')">
             </div>
           </div>
           <div class="help_form">
             <label for="help_info">How can i help?</label>
-            <input type="text" name="Help Info" oninvalid="this.setCustomValidity('Please tell me how i can help you.')"
+            <input type="text" name="Help Info" required oninvalid="this.setCustomValidity('Please tell me how i can help you.')"
               oninput="this.setCustomValidity('')">
           </div>
           <div class="accept_privatpolicy_send">
             <div class="privat_policy">
-              <input type="checkbox" class="privat_checked" required />
+              <input type="checkbox" class="privat_checked" required oninvalid="this.setCustomValidity('Please accept the privacy policy.')"
+              oninput="this.setCustomValidity('')">
               <label for="privat_policy"></label>
               <p>
                 I've read the
                 <span><a href="" data-text="privacy policy">privacy policy</a></span>
                 and agree to the processing of my data as outlined.
               </p>
-              <span>
-                <p class="error-message">
-                  Please accept the privacy policy.
-                </p>
-              </span>
             </div>
             <input class="submit_buttom" type="submit" value="Send" method />
           </div>

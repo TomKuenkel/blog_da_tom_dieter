@@ -457,15 +457,6 @@ label {
   transform: rotate(45deg);
 }
 
-.error-message {
-  opacity: 0;
-  color: rgb(185, 16, 47);
-}
-
-.accept_privatpolicy_send:has(.privat_checked:user-invalid) .error-message {
-  opacity: 1;
-}
-
 .privat_policy a {
   text-decoration: none;
   color: rgba(78, 164, 135, 1);
