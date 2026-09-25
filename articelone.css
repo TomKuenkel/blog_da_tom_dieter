@@ -35,6 +35,7 @@ html {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .nav_text {
@@ -75,8 +76,15 @@ h1 {
   color: rgba(241, 201, 83, 1);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .landing-section {
-  height: 100dvh;
+  height: 608px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -119,20 +127,21 @@ h1 {
   padding-bottom: 16px;
 }
 
-.author > h5 {
+.author > h6 {
   font-size: 1.125rem;
   color: rgba(84, 55, 13, 1);
+  text-align: center;
 }
 
-.author > h6 {
+.text_author {
   font-size: 1.125rem;
   font-weight: 400;
   color: rgba(84, 55, 13, 1);
-  padding-bottom: 12px;
 }
 
 .author > p {
   color: rgba(84, 55, 13, 1);
+  padding-top: 12px;
 }
 
 .infos {
@@ -170,6 +179,124 @@ h1 {
 .calender > img {
   width: 16px;
   height: 18px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h5 {
+  font-size: 2rem;
+  margin-top: 88px;
+  color: rgba(84, 55, 13, 1);
+}
+
+.slider_b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 440px;
+  margin: 64px 0px 88px -65px;
+}
+
+.slider_b_elemnet {
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  margin-right: -100px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  transform: perspective(700px) rotateY(20deg) translateX(0px) scaleY(1);
+  transform-origin: 50% 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.slider_b_elemnet > img {
+  display: flex;
+  object-fit: cover;
+  object-position: -161px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.slider_b_elemnet:hover {
+  transform: perspective(600px) rotateY(0deg) translateX(0px) scaleY(1.1) scaleX(1.1);
+  margin-left: 140px;
+  margin-right: 40px;
+  z-index: 2;
+}
+
+.slider_b_elemnet:hover ~ .slider_b_elemnet {
+  transform: perspective(600px) rotateY(-20deg) translateX(0px) scaley(1);
+}
+
+.beach4 > img {
+  object-position: -210px 0px;
+}
+
+.beach3 > img {
+  object-position: -30px 0px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 120px;
+  width: 100%px;
+  gap: 88px;
+}
+
+.article_text,
+ol {
+  font-size: 1.5rem;
+  color: rgba(61, 61, 61, 1);
+}
+
+.list_beach p {
+  font-size: 1.5rem;
+  color: rgba(61, 61, 61, 1);
+  padding-bottom: 40px;
+}
+
+.text_span {
+  font-weight: 700;
+}
+
+.articles_one {
+  width: 100%;
+}
+
+.list_beach {
+  width: 1000px;
+}
+
+.beach_tipps > img {
+  position: relative;
+  right: 60px;
+  top: 45px;
+}
+
+.beach_tipps ol {
+  width: 1000px;
+  padding: 26px 16px 24px 46px;
+  background-color: rgba(78, 164, 135, 0.2);
+  border-radius: 30px;
+}
+
+.articles_two {
+  width: 100%;
+}
+
+.share_it {
+  border: 1px black solid;
+  width: 100%;
+  height: 200px;
 }
 
 .footer {
