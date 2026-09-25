@@ -348,7 +348,11 @@ ol {
 
   .header {
     padding: 0px calc(50% - 720px);
+  } 
+  main {
+    padding: 0px calc(50% - 720px);
   }
+
 
   .footer {
     padding: 0px calc(50% - 720px);
