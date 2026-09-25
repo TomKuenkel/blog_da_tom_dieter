@@ -89,7 +89,6 @@ h1 {
 .headline {
   display: flex;
   flex-direction: column;
-  height: 400px;
   gap: 40px;
   padding-left: 120px;
 }
@@ -112,8 +111,8 @@ h1 {
   margin-top: 208px;
   margin-right: 120px;
   padding: 16px;
-  width: 300px;
-  height: 400px;
+  max-width: 272px;
+
 }
 .author > img {
   padding-bottom: 16px;
@@ -161,15 +160,14 @@ h1 {
   width: 16px;
   height: 18px;
 }
-
 .Lorem {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 120px;
+  font-weight: 400;
   font-size: 24px;
 }
-
 .footer {
   height: 152px;
   background-color: rgba(78, 164, 135, 1);
