@@ -8,14 +8,15 @@ html {
   scroll-padding-top: 100px;
   font-size: 16px;
 }
-.landing-section {
+.landing-section-articeltwo {
+  padding: 208px 120px 0 120px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 h1 {
-  font-size: 3.75rem;
+  padding: 8px 0;
 }
 .landing-section > p {
   font-size: 1.75rem;
@@ -66,7 +67,6 @@ h1 {
   display: none;
 }
 h4 {
-  padding-top: 208px;
   font-size: 2.5rem;
   font-weight: 600;
   color: rgba(78, 164, 135, 1);
@@ -76,13 +76,14 @@ h1 {
   color: rgba(241, 201, 83, 1);
 }
 .landing-section {
-  height: 100dvh;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
 .landing_hedline {
+  justify-content: space-between;
+  width: 100%;
   display: flex;
   gap: 26px;
 }
@@ -90,7 +91,6 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-left: 120px;
 }
 .headline_text {
   display: flex;
@@ -108,11 +108,9 @@ h1 {
   align-items: center;
   background-color: rgba(78, 164, 135, 0.2);
   border-radius: 30px;
-  margin-top: 208px;
-  margin-right: 120px;
-  padding: 16px;
+  padding: 12px;
+  margin: 0 0 0 26px;
   max-width: 272px;
-
 }
 .author > img {
   padding-bottom: 16px;
@@ -145,27 +143,56 @@ h1 {
   color: rgba(84, 55, 13, 1);
 }
 .calender > img {
-  width: 16px;
-  height: 18px;
+  max-width: 16px;
+  max-height: 18px;
 }
 .eyeglasses > img {
-  width: 20px;
-  height: 7px;
+  max-width: 20px;
+  max-height: 7px;
 }
 .calender > img {
-  width: 20px;
-  height: 14px;
+  max-width: 20px;
+  max-height: 14px;
 }
 .calender > img {
-  width: 16px;
-  height: 18px;
+  max-width: 16px;
+  max-height: 18px;
 }
 .Lorem {
+  padding-top: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 120px;
   font-weight: 400;
+  font-size: 24px;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  max-width: 931px;
+  padding: 88px 0;
+}
+.video video {
+  border-radius: 53px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.description p,
+ul {
+  font-family: "Palanquin";
+  font-size: 24px;
+}
+.tips {
+}
+.tips-text {
+  max-width: 1083px;
+  max-height: 195px;
+  border-radius: 30px;
+  background-color: rgba(78, 164, 135, 0.2);
   font-size: 24px;
 }
 .footer {
@@ -179,13 +206,13 @@ h1 {
 .copyright {
   display: flex;
   align-items: center;
-  width: 155px;
+  max-width: 155px;
   color: white;
   gap: 4px;
   font-size: 18px;
 }
 .copyright > img {
-  height: 20px;
+  max-height: 20px;
 }
 .left-footer {
   display: flex;
