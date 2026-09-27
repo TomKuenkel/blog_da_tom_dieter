@@ -294,17 +294,50 @@ ol {
 }
 
 .share_it {
-  border: 1px black solid;
-  width: 100%;
-  height: 200px;
+  background-image: url(./assets/icons/arrowyellow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  padding-bottom: 88px;
+  gap: 48px;
+}
+
+.share_it > p {
+  font-size: 1.5rem;
+  color: rgba(84, 55, 13, 1);
+  font-weight: 500;
+  text-align: center;
+  font-family: "Arima";
+}
+
+input[type="submit"] {
+  background-image: url(./assets/icons/shareyellow.svg);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  padding: 10px 24px 10px 60px;
+  border-radius: 40px;
+  width: 158px;
+  background-color: rgba(78, 164, 135);
+  color: rgba(241, 201, 83, 1);
+  font-family: "Arima";
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 5%;
+  border: 0;
 }
 
 .footer {
   height: 152px;
   background-color: rgba(78, 164, 135, 1);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 48px;
   padding: 0px 120px;
 }
 
@@ -348,7 +381,8 @@ ol {
 
   .header {
     padding: 0px calc(50% - 720px);
-  } 
+  }
+
   main {
     padding: 0px calc(50% - 720px);
   }
