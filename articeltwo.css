@@ -9,7 +9,7 @@ html {
   font-size: 16px;
 }
 .landing-section-articeltwo {
-  padding: 208px 120px 0 120px;
+  padding: 208px 120px 80px 120px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -85,7 +85,6 @@ h1 {
   justify-content: space-between;
   width: 100%;
   display: flex;
-  gap: 26px;
 }
 .headline {
   display: flex;
@@ -108,7 +107,7 @@ h1 {
   align-items: center;
   background-color: rgba(78, 164, 135, 0.2);
   border-radius: 30px;
-  padding: 12px;
+  padding: 16px;
   margin: 0 0 0 26px;
   max-width: 272px;
 }
@@ -186,12 +185,48 @@ ul {
   font-family: "Palanquin";
   font-size: 24px;
 }
-.tips-text {
-  max-width: 1083px;
+.tipps {
+  margin-top: 154px;
+}
+.tipps-img {
+  display: block;
+  position: absolute;
+  left: -51px;
+  top: -70px;
+}
+.tipps-text {
+  position: relative;
   max-height: 195px;
+  max-width: 1083px;
   border-radius: 30px;
   background-color: rgba(78, 164, 135, 0.2);
   font-size: 24px;
+  padding: 26px 16px 24px;
+}
+.share-section {
+  padding-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+.share-section > p {
+  
+  display: flex;
+  font-family: "Arima";
+  font-size: 24px;
+ align-items: center;
+}
+.share-imgs{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  max-width: 107px;
+
+}
+.arrow_icon{
+  position: absolute;
 }
 .footer {
   height: 152px;
