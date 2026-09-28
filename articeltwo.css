@@ -204,29 +204,27 @@ ul {
   padding: 26px 16px 24px;
 }
 .share-section {
+  position: relative;
+  text-align: center;
   padding-top: 88px;
   display: flex;
   flex-direction: column;
   gap: 48px;
   align-items: center;
-}
-.share-section > p {
-  
-  display: flex;
   font-family: "Arima";
   font-size: 24px;
- align-items: center;
 }
-.share-imgs{
+.share-imgs {
   display: flex;
   flex-direction: row;
   justify-items: center;
-  align-items: center;
   max-width: 107px;
-
 }
 .arrow_icon{
+  display: block;
   position: absolute;
+  left: -10px;
+  top: 130px;
 }
 .footer {
   height: 152px;
