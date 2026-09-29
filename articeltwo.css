@@ -2,7 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  line-height: 1;
+  line-height: 120%;
 }
 html {
   scroll-padding-top: 100px;
@@ -53,7 +53,6 @@ h1 {
   display: block;
   position: absolute;
   opacity: 0;
-  bottom: 46px;
   bottom: -4px;
   left: -5px;
 }
@@ -112,7 +111,9 @@ h1 {
   max-width: 272px;
 }
 .author > img {
-  padding-bottom: 16px;
+  margin: 16px;
+  max-width: 120px;
+  border-radius: 30% 
 }
 .author > h5 {
   font-size: 1.125rem;
@@ -149,11 +150,11 @@ h1 {
   max-width: 20px;
   max-height: 7px;
 }
-.calender > img {
+.visibility > img {
   max-width: 20px;
   max-height: 14px;
 }
-.calender > img {
+.share > img {
   max-width: 16px;
   max-height: 18px;
 }
@@ -169,11 +170,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: start;
+  width: 100%;
   max-width: 931px;
-  padding: 88px 0;
+  padding: 5vw 0;
+  margin: 0 auto;
 }
 .video video {
   border-radius: 53px;
+  width: 100%;
 }
 .description {
   display: flex;
@@ -220,7 +224,7 @@ ul {
   justify-items: center;
   max-width: 107px;
 }
-.arrow_icon{
+.arrow_icon {
   display: block;
   position: absolute;
   left: -10px;
