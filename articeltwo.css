@@ -264,20 +264,21 @@ ul {
   gap: 16px;
   align-items: center;
 }
-@media screen and (min-width: 1440px) {
-  .landing-section {
-    padding: 0px calc(50% - 720px);
-  }
-
-  .header {
-    padding: 0px calc(50% - 720px);
-  }
-
-  .footer {
-    padding: 0px calc(50% - 720px);
-  }
-
-  .header > a {
-    margin-left: 20px;
-  }
+@media screen and (max-width: 345px) {
+  .landing-section-articeltwo {
+padding: 120px 15px 80px;
+}
+h4 {
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+.landing_hedline {
+  flex-direction: column;
+  gap: 24px;
+}
+.headline_text > p {
+  font-size: 18px;
+}
 }
