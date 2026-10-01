@@ -17,6 +17,7 @@ html {
   width: 100%;
   background-color: rgba(78, 164, 135, 1);
   position: fixed;
+  touch-action: 0px;
   z-index: 3;
 }
 
@@ -65,15 +66,22 @@ html {
 }
 
 h4 {
-  padding-top: 208px;
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
   font-weight: 600;
   color: rgba(78, 164, 135, 1);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw + 1rem, 4rem);
   color: rgba(241, 201, 83, 1);
+}
+
+.landing-section-articelone {
+  padding: 208px 120px 80px 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -84,18 +92,16 @@ main {
 }
 
 .landing-section {
-  height: 608px;
+  justify-content: space-between;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
-  height: 400px;
   gap: 40px;
-  padding-left: 120px;
 }
 
 .headline_text {
@@ -116,15 +122,15 @@ main {
   align-items: center;
   background-color: rgba(78, 164, 135, 0.2);
   border-radius: 30px;
-  margin-top: 208px;
-  margin-right: 120px;
   padding: 16px;
   width: 300px;
-  height: 400px;
+
 }
 
 .author > img {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  max-width: 120px;
+  border-radius: 60px;
 }
 
 .author > h6 {
@@ -142,6 +148,16 @@ main {
 .author > p {
   color: rgba(84, 55, 13, 1);
   padding-top: 12px;
+}
+
+.info_block_one {
+  display: flex;
+  gap: 32px;
+}
+
+.info_block_two {
+  display: flex;
+  gap: 32px;
 }
 
 .infos {
@@ -204,7 +220,7 @@ h5 {
 
 .slider_b_elemnet {
   z-index: 1;
-  width: 300px;
+  max-width: 300px;
   height: 100%;
   margin-right: -100px;
   border-radius: 16px;
@@ -247,8 +263,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 120px;
-  width: 100%px;
+  width: 100%;
   gap: 88px;
 }
 
@@ -273,17 +288,22 @@ ol {
 }
 
 .list_beach {
-  width: 1000px;
+  max-width: 1000px;
+}
+
+.beach_tipps {
+  height: auto;
 }
 
 .beach_tipps > img {
   position: relative;
+  margin-top: -40px;
   right: 60px;
   top: 45px;
 }
 
 .beach_tipps ol {
-  width: 1000px;
+  max-width: 1000px;
   padding: 26px 16px 24px 46px;
   background-color: rgba(78, 164, 135, 0.2);
   border-radius: 30px;
@@ -303,7 +323,6 @@ ol {
   justify-content: center;
   align-items: center;
   max-width: 500px;
-  padding-bottom: 88px;
   gap: 48px;
 }
 
@@ -335,9 +354,8 @@ input[type="submit"] {
   height: 152px;
   background-color: rgba(78, 164, 135, 1);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 48px;
   padding: 0px 120px;
 }
 
@@ -356,11 +374,17 @@ input[type="submit"] {
 
 .left-footer {
   display: flex;
+  ;
   align-items: center;
   gap: 72px;
 }
 
-.left-footer > a {
+.links_footer_left {
+  display: flex;
+  gap: 72px;
+}
+
+.links_footer_left > a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -372,27 +396,248 @@ input[type="submit"] {
   align-items: center;
 }
 
+.right-footer > a {
+  display: flex;
+  align-items: center;
+}
+
+.nav_mobile {
+  display: none;
+}
 
 
-@media screen and (min-width: 1440px) {
-  .landing-section {
-    padding: 0px calc(50% - 720px);
+
+
+  @media screen and (min-width: 1440px) {
+    .landing-section {
+      padding: 0px calc(50% - 720px);
+    }
+
+    .header {
+      padding: 0px calc(50% - 720px);
+    }
+
+    main {
+      padding: 0px calc(50% - 720px);
+    }
+
+
+    .footer {
+      padding: 0px calc(50% - 720px);
+    }
+
+    .header > a {
+      margin-left: 20px;
+    }
   }
 
-  .header {
-    padding: 0px calc(50% - 720px);
+  @media screen and (max-width: 1100px) {
+    .landing-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .headline_text > p {
+      font-size: 1.4rem;
+    }
+
+    .landing-section-articelone {
+      padding: 208px 100px 80px 100px;
+    }
+
+    .footer {
+      padding: 0px 100px;
+    }
+
+    .footer {
+      height: 140px;
+    }
+
+    .left-footer {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .left-footer a,
+    p {
+      font-size: 1rem;
+    }
+
+    .links_footer_left {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .right-footer {
+      padding-top: 37px;
+    }
   }
 
-  main {
-    padding: 0px calc(50% - 720px);
+
+
+  @media screen and (max-width: 850px) {
+
+
+    .landing-section-articelone {
+      padding: 150px 60px 80px 60px;
+    }
+
+    .headline_text > p {
+      font-size: 1.125rem;
+    }
+
+    .headline {
+      gap: 24px;
+    }
+
+    .footer {
+      padding: 0px 60px;
+    }
+
+    .carousel {
+      display: none;
+    }
+
+    .beach_tipps > img {
+      right: 30px;
+      top: 30px;
+    }
   }
 
+  @media screen and (max-width: 750px) {
+
+    .infos {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .info_block_one {
+      gap: 5px;
+    }
+
+    .info_block_two {
+      gap: 19px;
+    }
+
+    .nav-bar {
+      display: none;
+    }
+
+    .header {
+      height: 70px;
+      justify-content: center;
+      position: absolute;
+    }
+
+    .header > a {
+      margin-left: 0px;
+    }
+
+    .header > a > img {
+      width: 56px;
+    }
+
+    .footer {
+      margin-bottom: 88px;
+    }
+
+    .nav_mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 88px;
+      width: 100%;
+      background-color: rgba(241, 201, 83, 1);
+      position: fixed;
+      bottom: 0px;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 700px) {
+
+  .landing-section-articelone {
+    padding: 94px 15px 80px 15px;
+  }
+
+  .share_it {
+    background-image: url(./assets/icons/yellowarrowsmall.svg);
+    background-position-x: 70px;
+    background-position-y: 70px;
+  }
 
   .footer {
-    padding: 0px calc(50% - 720px);
+    padding: 0px 15px;
   }
 
-  .header > a {
-    margin-left: 20px;
+  .articles {
+    gap: 32px;
   }
+
+  .beach_tipps > img {
+    right: 0px;
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .share_it {
+    background-position-x: 25px;
+    background-position-y: 50px;
+
+  }
+
+  .articles p {
+    font-size: 1rem;
+    color: rgba(84, 55, 13, 1);
+  }
+
+  .share_it > p {
+    font-size: 18px;
+  }
+
+  ol {
+    font-size: 1rem;
+    color: rgba(84, 55, 13, 1);
+  }
+
+  .list_beach p {
+    padding-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+
+  .right-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 130px;
+  }
+
+  .instagram {
+    padding: 0px 6px;
+  }
+
+}
+
+
+@media screen and (max-width: 335px) {
+
+  .share_it {
+    background-position-x: 3px;
+  }
+
+  .landing-section-articelone {
+    padding: 94px 8px 80px 8px;
+  }
+
 }
