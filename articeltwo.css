@@ -15,9 +15,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
-h1 {
-  padding: 8px 0;
-}
 .landing-section > p {
   font-size: 1.75rem;
 }
@@ -66,13 +63,14 @@ h1 {
   display: none;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 2dvw + 1rem, 2.5rem);
   font-weight: 600;
   color: rgba(78, 164, 135, 1);
 }
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 4dvw + 1rem, 4rem);
   color: rgba(241, 201, 83, 1);
+  padding: 8px 0;
 }
 .landing-section {
   width: 100%;
@@ -113,7 +111,7 @@ h1 {
 .author > img {
   margin: 16px;
   max-width: 120px;
-  border-radius: 30% 
+  border-radius: 30%;
 }
 .author > h5 {
   font-size: 1.125rem;
@@ -264,21 +262,33 @@ ul {
   gap: 16px;
   align-items: center;
 }
-@media screen and (max-width: 345px) {
+@media screen and (min-width: 320px) and (max-width: 390px) {
+  .header {
+    height: 70px;
+    justify-content: center;
+    position: absolute;
+  }
+  .header > a {
+    margin-left: 0%;
+  }
+  .header img {
+    width: 56px;
+  }
+  .nav-bar {
+    display: none;
+  }
   .landing-section-articeltwo {
-padding: 120px 15px 80px;
-}
-h4 {
-  font-size: 20px;
-}
-h1 {
-  font-size: 40px;
-}
-.landing_hedline {
-  flex-direction: column;
-  gap: 24px;
-}
-.headline_text > p {
-  font-size: 18px;
-}
+    padding: 94px 8px 80px 8px;
+  }
+  .landing_hedline {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .headline_text > p {
+    font-size: 18px;
+  }
+  .author {
+    max-width: 272px;
+    margin: 0;
+  }
 }
