@@ -78,7 +78,7 @@ h1 {
   flex-direction: column;
   gap: 48px;
 }
-.landing_hedline {
+.landing_headline {
   justify-content: space-between;
   width: 100%;
   display: flex;
@@ -128,6 +128,14 @@ h1 {
 .infos {
   display: flex;
   flex-direction: row;
+  gap: 32px;
+}
+.infos-one {
+  display: flex;
+  gap: 32px;
+}
+.infos-two {
+  display: flex;
   gap: 32px;
 }
 .info_block {
@@ -260,7 +268,7 @@ ul {
   gap: 16px;
   align-items: center;
 }
-@media screen and (min-width: 320px) and (max-width: 390px) {
+@media screen and (max-width: 390px) {
   .header {
     height: 70px;
     justify-content: center;
@@ -278,15 +286,40 @@ ul {
   .landing-section-articeltwo {
     padding: 94px 8px 80px 8px;
   }
-  .landing_hedline {
+  .landing_headline {
     flex-direction: column;
+    gap: 24px;
+  }
+  .headline{
     gap: 24px;
   }
   .headline_text > p {
     font-size: 18px;
   }
+  .infos {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .infos-one {
+    gap: 8px;
+  }
+  .infos-two {
+    gap: 8px;
+  }
   .author {
-    max-width: 272px;
+    max-width: 345px;
     margin: 0;
   }
+  .author p {
+    text-align: center;
+  }
+  .Lorem {
+  font-size: 16px;
+}
+.video video {
+  border-radius: 30px;
+}
+.description p, ul {
+  font-size: 16px;
+}
 }
