@@ -111,7 +111,6 @@ h1 {
 .author > img {
   margin: 16px;
   max-width: 120px;
-  border-radius: 30%;
 }
 .author > h5 {
   font-size: 1.125rem;
@@ -198,7 +197,6 @@ ul {
 }
 .tipps-text {
   position: relative;
-  max-height: 195px;
   max-width: 1083px;
   border-radius: 30px;
   background-color: rgba(78, 164, 135, 0.2);
