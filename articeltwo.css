@@ -212,7 +212,8 @@ ul {
   padding: 26px 16px 24px;
 }
 .share-section {
-  position: relative;
+  background-image: url(./assets/icons/arrowyellow.svg);
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 88px;
   display: flex;
@@ -221,18 +222,17 @@ ul {
   align-items: center;
   font-family: "Arima";
   font-size: 24px;
+  max-width: 500px;
+  background-position-x: 20px;
+  background-position-y: 130px;
+}
+.share-section p {
+  font-family: "Arima";
 }
 .share-imgs {
   display: flex;
   flex-direction: row;
   justify-items: center;
-  max-width: 107px;
-}
-.arrow_icon {
-  display: block;
-  position: absolute;
-  left: -10px;
-  top: 130px;
 }
 .footer {
   height: 152px;
@@ -258,7 +258,8 @@ ul {
   align-items: center;
   gap: 72px;
 }
-.left-footer > a {
+.left-footer a {
+  font-family: "Palanquin";
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -268,7 +269,7 @@ ul {
   gap: 16px;
   align-items: center;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .header {
     height: 70px;
     justify-content: center;
@@ -288,9 +289,10 @@ ul {
   }
   .landing_headline {
     flex-direction: column;
+    align-items: center;
     gap: 24px;
   }
-  .headline{
+  .headline {
     gap: 24px;
   }
   .headline_text > p {
@@ -314,12 +316,46 @@ ul {
     text-align: center;
   }
   .Lorem {
+    font-size: 16px;
+  }
+  .video video {
+    border-radius: 30px;
+  }
+  .description p,
+  ul {
+    font-size: 16px;
+  }
+.tipps-text {
   font-size: 16px;
+  padding: 24px 16px;
 }
-.video video {
-  border-radius: 30px;
+.tipps-img {
+  display: block;
+  position: absolute;
+  left: -3px;
+  top: -80px;
 }
-.description p, ul {
-  font-size: 16px;
+.share-section {
+  background-image: url(./assets/icons/yellowarrowsmall.svg);
+  background-position-x: 10px;
+  background-position-y: 150px;
+  font-size: 18px;
 }
+.footer {
+  padding: 0 8px;
+}
+.left-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 8px;
+}
+.footer-left-text{
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+ .right-footer {
+    padding-top: 48px;
+  }
 }
