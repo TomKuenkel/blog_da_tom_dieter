@@ -258,6 +258,10 @@ ul {
   align-items: center;
   gap: 72px;
 }
+.footer-left-text {
+  display: flex;
+  gap: 72px;
+}
 .left-footer a {
   font-family: "Palanquin";
   color: white;
@@ -268,6 +272,46 @@ ul {
   display: flex;
   gap: 16px;
   align-items: center;
+}
+.nav-yellow {
+  display: none;
+}
+@media screen and (max-width: 975px) {
+  .landing-section-articeltwo {
+    padding: 208px 110px 80px 110px;
+  }
+  .footer {
+    padding: 0px 60px;
+  }
+}
+@media screen and (max-width: 863px) {
+  .landing-section-articeltwo {
+    padding: 208px 100px 80px 100px;
+  }
+  .footer {
+    padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 855px) {
+  .landing-section-articeltwo {
+    padding: 208px 90px 80px 90px;
+  }
+  .landing_headline {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 803px) {
+  .landing-section-articeltwo {
+    padding: 208px 80px 80px 80px;
+  }
+  .left-footer {
+    gap: 30px;
+  }
+  .footer-left-text {
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 500px) {
   .header {
@@ -286,11 +330,6 @@ ul {
   }
   .landing-section-articeltwo {
     padding: 94px 8px 80px 8px;
-  }
-  .landing_headline {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
   }
   .headline {
     gap: 24px;
@@ -342,7 +381,7 @@ ul {
     font-size: 18px;
   }
   .footer {
-    padding: 0 8px;
+    padding: 0 24px;
   }
   .left-footer {
     display: flex;
@@ -355,10 +394,25 @@ ul {
     flex-direction: column;
     gap: 8px;
   }
+  .copyright {
+    font-size: 16px;
+  }
+  .left-footer a {
+    font-size: 16px;
+  }
   .right-footer {
     padding-top: 48px;
+    justify-content: center;
   }
-  .nav-mobile {
+}
+@media screen and (max-width: 375px) {
+  .right-footer {
+    width: 130px;
+  }
+  .right-footer img {
+    width: 24px;
+  }
+  .nav-yellow {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -367,5 +421,10 @@ ul {
     height: 88px;
     width: 100%;
     bottom: 0px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .footer {
+    padding: 0 16px;
   }
 }
