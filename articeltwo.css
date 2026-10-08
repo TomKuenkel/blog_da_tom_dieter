@@ -189,8 +189,7 @@ h1 {
   flex-direction: column;
   gap: 32px;
 }
-.description p,
-ul {
+.description p, ul {
   font-family: "Palanquin";
   font-size: 24px;
 }
