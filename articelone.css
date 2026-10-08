@@ -620,15 +620,15 @@ input[type="submit"] {
   /* Bild 2 */
 
   .slider_a input[value="two"]:checked ~ .slider_b > .beach4 {
-    transform: perspective(700px) rotateY(20deg) scale(0.9);
+    transform: perspective(700px) translateX(5px) rotateY(20deg) scale(0.9);
   }
 
   .slider_a input[value="two"]:checked ~ .slider_b > .beach2 {
-    transform: perspective(700px) rotateY(0deg) scale(1.15);
+    transform: perspective(700px) translateX(10px) rotateY(0deg) scale(1.15);
   }
 
   .slider_a input[value="two"]:checked ~ .slider_b > .beach3 {
-    transform: perspective(700px) rotateY(-20deg) scale(0.9);
+    transform: perspective(700px) translateX(15px) rotateY(-20deg) scale(0.9);
   }
 
   /* Bild 3 */
@@ -648,15 +648,15 @@ input[type="submit"] {
   /* Bild 4 */
 
   .slider_a input[value="four"]:checked ~ .slider_b > .beach3 {
-    transform: perspective(700px) rotateY(20deg) scale(0.9);
+    transform: perspective(700px) translateX(-15px) rotateY(20deg) scale(0.9);
   }
 
   .slider_a input[value="four"]:checked ~ .slider_b > .beach1 {
-    transform: perspective(700px) rotateY(0deg) scale(1.15);
+    transform: perspective(700px) translateX(-10px) rotateY(0deg) scale(1.15);
   }
 
   .slider_a input[value="four"]:checked ~ .slider_b > .beach5 {
-    transform: perspective(700px) rotateY(-20deg) scale(0.9);
+    transform: perspective(700px)translateX(-5px) rotateY(-20deg) scale(0.9);
   }
 
   /* Bild 5 */
