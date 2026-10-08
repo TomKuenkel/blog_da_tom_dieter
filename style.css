@@ -313,16 +313,14 @@ h2 {
   margin-top: 10px;
 }
 
-summary {
-  font-size: 1.5rem;
-}
-
 summary::marker {
   display: none;
   content: "";
 }
 
 summary {
+  font-size: 1.5rem;
+  gap: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -719,7 +717,7 @@ label {
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
   .nav-bar {
     display: none;
@@ -757,6 +755,11 @@ label {
 }
 
 @media screen and (max-width: 700px) {
+  summary {
+    font-size: 1.25rem;
+  }
+
+
   .footer {
     padding: 0px 15px;
   }
@@ -798,6 +801,11 @@ label {
 }
 
 @media screen and (max-width: 500px) {
+
+  summary {
+    font-size: 1rem;
+  }
+
   .slider_a {
     width: 300px;
   }
@@ -822,12 +830,18 @@ label {
 
 @media screen and (max-width: 390px) {
 
+   .right-footer img {
+    height: 24px;
+    width: 24px;
+  }
+
   .right-footer {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 130px;
+    padding-top: 50px;
+    gap: 12px;
+  }
+
+  .footer{
+    padding-left: 8px;
   }
 
 }
