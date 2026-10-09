@@ -105,7 +105,7 @@ h1 {
 }
 
 .cappadocia-text h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.75rem);
   margin: 0;
 }
 
@@ -130,7 +130,7 @@ h1 {
   position: absolute;
   z-index: 2;
   top: 55%;
-  left: 33%;
+  left: 30%;
 }
 
 .turkey_icon img {
@@ -614,8 +614,11 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 1380px) {
 
+}
+
+@media screen and (max-width: 1268px) {
   .footer {
     margin-top: 32px;
   }
@@ -630,6 +633,19 @@ input[type="checkbox"] {
 
   .help_form {
     width: 530px;
+  }
+
+  .cappadocia-section {
+    background-position-x: 43%;
+  }
+
+  .yellow-vector {
+    max-width: 547px;
+  }
+
+  .turkey_icon {
+    top: 35%;
+    left: 35%;
   }
 
   .accordion {
@@ -698,7 +714,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1050px) {
-
   .accordion {
     width: 800px;
   }
@@ -733,9 +748,7 @@ input[type="checkbox"] {
   }
 }
 
-
 @media screen and (max-width: 870px) {
-
   .accordion {
     width: 600px;
   }
@@ -801,7 +814,6 @@ input[type="checkbox"] {
     width: 530px;
   }
 
-
   .highlights-section > p {
     display: none;
   }
@@ -838,7 +850,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 700px) {
-
   .accept_privatpolicy_send {
     gap: 32px;
   }
@@ -859,10 +870,30 @@ input[type="checkbox"] {
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  .cappadocia-section {
+    margin-top: 70px;
+    background-position-x: 43%;
+    background-position-y: 48%;
+  }
+
+  .cappadocia-text {
+    display: none;
+  }
+
+  .yellow-vector {
+    background-image: url("./assets/img/Vector .png");
+    background-size: 100%;
+    max-width: 222px;
+  }
+
+  .turkey_icon {
+    top: 25%;
+    left: 20%;
+  }
 }
 
 @media screen and (max-width: 650px) {
-
   .form {
     padding-left: 100px;
   }
@@ -886,7 +917,6 @@ input[type="checkbox"] {
   .help_form {
     max-width: 250px;
   }
-
 
   .highlights-section {
     padding-bottom: 32px;
@@ -924,10 +954,30 @@ input[type="checkbox"] {
   .text_p {
     display: none;
   }
+
+  .cappadocia-section {
+    margin-top: 70px;
+    background-position-x: 43%;
+    background-position-y: 48%;
+  }
+
+  .cappadocia-text {
+    display: none;
+  }
+
+  .yellow-vector {
+    background-image: url("./assets/img/Vector 2.png");
+    background-size: 100%;
+    max-width: 222px;
+  }
+
+  .turkey_icon {
+    top: 25%;
+    left: 20%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-
   .form {
     padding-left: 25px;
   }
@@ -953,7 +1003,6 @@ input[type="checkbox"] {
     padding-right: 5px;
     padding-left: 5px;
   }
-
 
   .accordion {
     max-width: 300px;
@@ -983,9 +1032,7 @@ input[type="checkbox"] {
     left: 310px;
     top: 90px;
   }
-
 }
-
 
 @media screen and (max-width: 390px) {
   .right-footer img {
