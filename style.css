@@ -383,6 +383,8 @@ details[open]::details-content {
 
 .form_top {
   display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
   max-width: 1100px;
   padding-bottom: 64px;
@@ -404,12 +406,18 @@ details[open]::details-content {
   height: 100px;
 }
 
+.form_container {
+  display: flex;
+  justify-content: center;
+  width: 530px;
+}
+
 .help_form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   justify-content: space-between;
-  width: 530px;
+  width: 100%;
   height: 100px;
   width: 100%;
   margin-bottom: 16px;
@@ -609,7 +617,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 1250px) {
 
   .footer {
-  margin-top: 32px;
+    margin-top: 32px;
   }
 
   .form_top {
@@ -778,16 +786,15 @@ input[type="checkbox"] {
   }
 
   .form_top {
-    width: 530px;
     padding-top: 32px;
   }
 
   .name_form {
-    width: 530px;
+    width: 100%;
   }
 
   .email_form {
-    width: 530px;
+    width: 100%;
   }
 
   .help_form {
@@ -856,8 +863,15 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 650px) {
 
+  .form {
+    padding-left: 100px;
+  }
 
   .form_top {
+    max-width: 250px;
+  }
+
+  .form_container {
     max-width: 250px;
   }
 
@@ -914,6 +928,10 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 500px) {
 
+  .form {
+    padding-left: 25px;
+  }
+
   .h2-design {
     gap: 3px;
   }
@@ -921,50 +939,51 @@ input[type="checkbox"] {
   .h2-design > img {
     width: 30px;
     height: auto;
-
-    .footer {
-      padding: 0px 8px;
-    }
-
-    .nav-bar {
-      padding: 0px 8px;
-    }
-
-    .content-section {
-      padding-right:5px;
-      padding-left: 5px;
-    }
   }
 
-  .accordion {
-    max-width: 300px;
+  .footer {
+    padding: 0px 8px;
   }
 
-  summary {
-    font-size: 1rem;
+  .nav-bar {
+    padding: 0px 8px;
   }
 
-  .slider_a {
-    width: 300px;
-  }
-
-  .container_copenhagen {
-    background-position-y: 0px;
-    background-position-x: -350px;
-  }
-
-  .text-block_beach {
-    width: 280px;
-    left: 10px;
-    top: 90px;
-  }
-
-  .text-block_copenhagen {
-    width: 280px;
-    left: 310px;
-    top: 90px;
+  .content-section {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
+
+.accordion {
+  max-width: 300px;
+}
+
+summary {
+  font-size: 1rem;
+}
+
+.slider_a {
+  width: 300px;
+}
+
+.container_copenhagen {
+  background-position-y: 0px;
+  background-position-x: -350px;
+}
+
+.text-block_beach {
+  width: 280px;
+  left: 10px;
+  top: 90px;
+}
+
+.text-block_copenhagen {
+  width: 280px;
+  left: 310px;
+  top: 90px;
+}
+
 
 @media screen and (max-width: 390px) {
   .right-footer img {
