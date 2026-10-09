@@ -142,7 +142,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 120px;
+  padding: 120px 120px 0px 120px;
 }
 
 .slider_a {
@@ -284,7 +284,6 @@ input[type="radio"]:checked {
   justify-content: center;
   gap: 8px;
   color: rgba(78, 164, 135, 1);
-  padding-top: 120px;
 }
 
 .h2-design > img {
@@ -319,7 +318,7 @@ h2 {
   background-color: rgba(241, 201, 83, 1);
   padding: 16px 14px;
   border-radius: 12px;
-  max-width: 1200px;
+  width: 1200px;
 }
 
 .accordion > p {
@@ -379,15 +378,13 @@ details[open]::details-content {
 .form {
   display: flex;
   flex-direction: column;
-
-  width: 1100px;
-  height: 400px;
+  max-width: 1100px;
 }
 
 .form_top {
   display: flex;
   justify-content: space-between;
-  width: 1100px;
+  max-width: 1100px;
   padding-bottom: 64px;
 }
 
@@ -499,6 +496,12 @@ label {
   transform: rotate(45deg);
 }
 
+input[type="checkbox"] {
+  flex-shrink: 0;
+  min-width: 18px;
+  min-height: 18px;
+}
+
 .privat_policy a {
   text-decoration: none;
   color: rgba(78, 164, 135, 1);
@@ -604,6 +607,27 @@ label {
 }
 
 @media screen and (max-width: 1250px) {
+
+  .footer {
+  margin-top: 32px;
+  }
+
+  .form_top {
+    flex-direction: column;
+    align-items: center;
+    width: 530px;
+    gap: 32px;
+    padding-bottom: 32px;
+  }
+
+  .help_form {
+    width: 530px;
+  }
+
+  .accordion {
+    width: 1000px;
+  }
+
   .slider_a {
     width: 1000px;
   }
@@ -631,37 +655,6 @@ label {
 
   .text-block_beach > p {
     font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .slider_a {
-    width: 800px;
-  }
-
-  .text-block_beach {
-    width: 480px;
-  }
-
-  .text-block_copenhagen {
-    width: 480px;
-    left: 840px;
-  }
-
-  .text-block_beach > h3 {
-    font-size: 1.75rem;
-  }
-
-  .text-block_copenhagen > h3 {
-    font-size: 1.75rem;
-  }
-
-  .text-block_copenhagen > p {
-    font-size: 1.25rem;
-  }
-
-  .text-block_beach > p {
-    font-size: 1.25rem;
   }
 }
 
@@ -696,9 +689,51 @@ label {
   }
 }
 
+@media screen and (max-width: 1050px) {
+
+  .accordion {
+    width: 800px;
+  }
+
+  .slider_a {
+    width: 800px;
+  }
+
+  .text-block_beach {
+    width: 480px;
+  }
+
+  .text-block_copenhagen {
+    width: 480px;
+    left: 840px;
+  }
+
+  .text-block_beach > h3 {
+    font-size: 1.75rem;
+  }
+
+  .text-block_copenhagen > h3 {
+    font-size: 1.75rem;
+  }
+
+  .text-block_copenhagen > p {
+    font-size: 1.25rem;
+  }
+
+  .text-block_beach > p {
+    font-size: 1.25rem;
+  }
+}
+
+
 @media screen and (max-width: 870px) {
+
+  .accordion {
+    width: 600px;
+  }
+
   .content-section {
-    padding: 0px 60px;
+    padding: 60px 60px 0px 60px;
   }
 
   .footer {
@@ -738,6 +773,32 @@ label {
     display: none;
   }
 
+  .text_contact_form {
+    display: none;
+  }
+
+  .form_top {
+    width: 530px;
+    padding-top: 32px;
+  }
+
+  .name_form {
+    width: 530px;
+  }
+
+  .email_form {
+    width: 530px;
+  }
+
+  .help_form {
+    width: 530px;
+  }
+
+
+  .highlights-section > p {
+    display: none;
+  }
+
   .header {
     height: 70px;
     justify-content: center;
@@ -770,6 +831,11 @@ label {
 }
 
 @media screen and (max-width: 700px) {
+
+  .accept_privatpolicy_send {
+    gap: 32px;
+  }
+
   summary {
     font-size: 1.25rem;
   }
@@ -783,11 +849,43 @@ label {
   }
 
   .content-section {
-    padding: 0px 15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 @media screen and (max-width: 650px) {
+
+
+  .form_top {
+    max-width: 250px;
+  }
+
+  .email_form {
+    max-width: 250px;
+  }
+
+  .name_form {
+    max-width: 250px;
+  }
+
+  .help_form {
+    max-width: 250px;
+  }
+
+
+  .highlights-section {
+    padding-bottom: 32px;
+  }
+
+  .faq_section {
+    padding-top: 32px;
+  }
+
+  .accordion {
+    max-width: 400px;
+  }
+
   .slider_a {
     width: 400px;
   }
@@ -815,6 +913,33 @@ label {
 }
 
 @media screen and (max-width: 500px) {
+
+  .h2-design {
+    gap: 3px;
+  }
+
+  .h2-design > img {
+    width: 30px;
+    height: auto;
+
+    .footer {
+      padding: 0px 8px;
+    }
+
+    .nav-bar {
+      padding: 0px 8px;
+    }
+
+    .content-section {
+      padding-right:5px;
+      padding-left: 5px;
+    }
+  }
+
+  .accordion {
+    max-width: 300px;
+  }
+
   summary {
     font-size: 1rem;
   }
