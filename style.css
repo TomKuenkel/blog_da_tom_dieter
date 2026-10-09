@@ -953,35 +953,37 @@ input[type="checkbox"] {
     padding-right: 5px;
     padding-left: 5px;
   }
-}
 
-.accordion {
-  max-width: 300px;
-}
 
-summary {
-  font-size: 1rem;
-}
+  .accordion {
+    max-width: 300px;
+  }
 
-.slider_a {
-  width: 300px;
-}
+  summary {
+    font-size: 1rem;
+  }
 
-.container_copenhagen {
-  background-position-y: 0px;
-  background-position-x: -350px;
-}
+  .slider_a {
+    width: 300px;
+  }
 
-.text-block_beach {
-  width: 280px;
-  left: 10px;
-  top: 90px;
-}
+  .container_copenhagen {
+    background-position-y: 0px;
+    background-position-x: -350px;
+  }
 
-.text-block_copenhagen {
-  width: 280px;
-  left: 310px;
-  top: 90px;
+  .text-block_beach {
+    width: 280px;
+    left: 10px;
+    top: 90px;
+  }
+
+  .text-block_copenhagen {
+    width: 280px;
+    left: 310px;
+    top: 90px;
+  }
+
 }
 
 
