@@ -614,10 +614,6 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (min-width: 1380px) {
-
-}
-
 @media screen and (max-width: 1268px) {
   .footer {
     margin-top: 32px;

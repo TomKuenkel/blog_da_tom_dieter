@@ -124,7 +124,6 @@ main {
   border-radius: 30px;
   padding: 16px;
   width: 300px;
-
 }
 
 .author > img {
@@ -411,7 +410,6 @@ input[type="submit"] {
   main {
     padding: 0px calc(50% - 720px);
   }
-
 
   .footer {
     padding: 0px calc(50% - 720px);
