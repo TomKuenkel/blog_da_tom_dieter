@@ -275,6 +275,23 @@ h1 {
 .nav-yellow {
   display: none;
 }
+@media screen and (min-width: 1440px) {
+  .landing-section {
+    padding: 0px calc(50% - 720px);
+  }
+  .header {
+    padding: 0px calc(50% - 720px);
+  }
+  main {
+    padding: 0px calc(50% - 720px);
+  }
+  .footer {
+    padding: 0px calc(50% - 720px);
+  }
+  .header > a {
+    margin-left: 20px;
+  }
+}
 @media screen and (max-width: 975px) {
   .landing-section-articeltwo {
     padding: 208px 110px 80px 110px;
