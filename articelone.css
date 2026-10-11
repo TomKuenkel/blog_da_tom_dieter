@@ -807,7 +807,6 @@ input[type="submit"] {
   .list_beach p {
     padding-bottom: 20px;
   }
-
 }
 
 @media screen and (max-width: 390px) {
@@ -831,7 +830,6 @@ input[type="submit"] {
   }
 }
 
-
 @media screen and (max-width: 335px) {
 
   .share_it {
@@ -839,7 +837,6 @@ input[type="submit"] {
   }
 
   .landing-section-articelone {
-    padding: 94px 8px 80px 8px;
+    padding: 94px 8px 88px 8px;
   }
-
 }

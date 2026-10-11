@@ -299,6 +299,16 @@ h1 {
     .nav-bar {
     display: none;
   }
+  .nav-yellow {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    background-color: rgba(241, 201, 83, 1);
+    height: 88px;
+    width: 100%;
+    bottom: 0px;
+  }
     .header > a {
     margin-left: 0%;
   }
@@ -313,7 +323,7 @@ h1 {
 }
 @media screen and (max-width: 803px) {
   .landing-section-articeltwo {
-    padding: 208px 80px 80px 80px;
+    padding: 208px 60px 80px 60px;
   }
   .left-footer {
     gap: 30px;
@@ -323,6 +333,9 @@ h1 {
   }
 }
 @media screen and (max-width: 693px) {
+  .share-section{
+    background-position-y: 145px;
+  }
   .left-footer {
     display: flex;
     flex-direction: column-reverse;
@@ -335,6 +348,10 @@ h1 {
     gap: 8px;
   }
 }
+@media screen and (max-width: 550px) {}
+.share-section{
+  background-position-x: 0px;
+}
 @media screen and (max-width: 500px) {
   .header {
     height: 70px;
@@ -343,7 +360,7 @@ h1 {
     width: 56px;
   }
   .landing-section-articeltwo {
-    padding: 94px 8px 80px 8px;
+    padding: 94px 8px 88px 8px;
   }
   .headline {
     gap: 24px;
@@ -391,8 +408,9 @@ h1 {
   .share-section {
     background-image: url(./assets/icons/yellowarrowsmall.svg);
     background-position-x: 10px;
-    background-position-y: 150px;
+    background-position-y: 80px;
     font-size: 18px;
+    padding-top: 32px;
   }
   .footer {
     padding: 0 24px;
@@ -414,16 +432,6 @@ h1 {
   }
   .right-footer img {
     width: 24px;
-  }
-  .nav-yellow {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: sticky;
-    background-color: rgba(241, 201, 83, 1);
-    height: 88px;
-    width: 100%;
-    bottom: 0px;
   }
 }
 @media screen and (max-width: 335px) {

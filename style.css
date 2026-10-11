@@ -632,7 +632,7 @@ input[type="checkbox"] {
   }
 
   .cappadocia-section {
-    background-position-x: 43%;
+    background-position-x: 10%;
   }
 
   .yellow-vector {
@@ -641,7 +641,7 @@ input[type="checkbox"] {
 
   .turkey_icon {
     top: 35%;
-    left: 35%;
+    left: 34.5%;
   }
 
   .accordion {
@@ -710,6 +710,7 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 1050px) {
+
   .accordion {
     width: 800px;
   }
@@ -741,6 +742,13 @@ input[type="checkbox"] {
 
   .text-block_beach > p {
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 890px) {
+
+  .turkey_icon {
+    left: 45%;
   }
 }
 
@@ -786,6 +794,10 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 800px) {
+  .cappadocia-section {
+    margin-top: 70px;
+  }
+
   .nav-bar {
     display: none;
   }
@@ -868,7 +880,6 @@ input[type="checkbox"] {
   }
 
   .cappadocia-section {
-    margin-top: 70px;
     background-position-x: 43%;
     background-position-y: 48%;
   }
@@ -878,7 +889,7 @@ input[type="checkbox"] {
   }
 
   .yellow-vector {
-    background-image: url("./assets/img/Vector .png");
+    background-image: url("./assets/img/Vector\ 2.png");
     background-size: 100%;
     max-width: 222px;
   }
@@ -953,7 +964,7 @@ input[type="checkbox"] {
 
   .cappadocia-section {
     margin-top: 70px;
-    background-position-x: 43%;
+    background-position-x: 46%;
     background-position-y: 48%;
   }
 
