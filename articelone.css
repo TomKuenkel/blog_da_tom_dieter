@@ -706,11 +706,11 @@ input[type="submit"] {
   }
 
   .info_block_one {
-    gap: 5px;
+    gap: 16px;
   }
 
   .info_block_two {
-    gap: 19px;
+    gap: 16px;
   }
 
   .nav-bar {
