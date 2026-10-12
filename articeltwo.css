@@ -100,6 +100,7 @@ h1 {
 .author {
   display: flex;
   flex-direction: column;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   background-color: rgba(78, 164, 135, 0.2);
@@ -189,10 +190,6 @@ h1 {
   flex-direction: column;
   gap: 32px;
 }
-.description p, ul {
-  font-family: "Palanquin";
-  font-size: 24px;
-}
 .tipps {
   margin-top: 154px;
 }
@@ -223,7 +220,7 @@ h1 {
   font-size: 24px;
   max-width: 500px;
   background-position-x: 20px;
-  background-position-y: 130px;
+  background-position-y: 138px;
 }
 .share-section p {
   font-family: "Arima";
@@ -244,7 +241,7 @@ h1 {
 .copyright {
   display: flex;
   align-items: center;
-  max-width: 155px;
+  width: 155px;
   color: white;
   gap: 4px;
   font-size: 18px;
@@ -271,6 +268,7 @@ h1 {
   display: flex;
   gap: 16px;
   align-items: center;
+  padding-top: 5px;
 }
 .nav-yellow {
   display: none;
@@ -300,20 +298,18 @@ h1 {
     padding: 0px 60px;
   }
 }
-@media screen and (max-width: 863px) {
+@media screen and (max-width: 924px) {
   .landing-section-articeltwo {
     padding: 208px 100px 80px 100px;
   }
   .footer {
     padding: 0px 30px;
   }
-}
-@media screen and (max-width: 855px) {
-    .header {
+  .header {
     justify-content: center;
     position: absolute;
   }
-    .nav-bar {
+  .nav-bar {
     display: none;
   }
   .nav-yellow {
@@ -326,7 +322,7 @@ h1 {
     width: 100%;
     bottom: 0px;
   }
-    .header > a {
+  .header > a {
     margin-left: 0%;
   }
   .landing-section-articeltwo {
@@ -350,7 +346,7 @@ h1 {
   }
 }
 @media screen and (max-width: 693px) {
-  .share-section{
+  .share-section {
     background-position-y: 145px;
   }
   .left-footer {
@@ -365,9 +361,10 @@ h1 {
     gap: 8px;
   }
 }
-@media screen and (max-width: 550px) {}
-.share-section{
-  background-position-x: 0px;
+@media screen and (max-width: 550px) {
+  .share-section {
+    background-position-x: 0px;
+  }
 }
 @media screen and (max-width: 500px) {
   .header {
