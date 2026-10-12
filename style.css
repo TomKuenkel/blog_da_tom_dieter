@@ -615,6 +615,12 @@ input[type="checkbox"] {
   }
 }
 
+@media screen and (max-width: 1320px) {
+  .turkey_icon {
+    left: 33%;
+  }
+}
+
 @media screen and (max-width: 1268px) {
   .footer {
     margin-top: 32px;
@@ -638,11 +644,6 @@ input[type="checkbox"] {
 
   .yellow-vector {
     max-width: 547px;
-  }
-
-  .turkey_icon {
-    top: 35%;
-    left: 34.5%;
   }
 
   .accordion {
@@ -763,10 +764,6 @@ input[type="checkbox"] {
   }
 
   .footer {
-    padding: 0px 60px;
-  }
-
-  .nav-bar {
     padding: 0px 60px;
   }
 
