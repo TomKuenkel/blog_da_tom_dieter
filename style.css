@@ -388,6 +388,7 @@ details[open]::details-content {
   justify-content: space-between;
   max-width: 1100px;
   padding-bottom: 64px;
+  gap: 40px;
 }
 
 .name_form {
