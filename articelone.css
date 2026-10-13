@@ -367,6 +367,7 @@ input[type="submit"] {
 .left-footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 72px;
 }
 
@@ -764,7 +765,7 @@ input[type="submit"] {
   }
 
   .footer {
-    padding: 0px 15px;
+    padding: 0px 30px;
   }
 
   .articles {
@@ -778,6 +779,10 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 500px) {
+
+  .copyright {
+    font-size: 16px;
+  }
 
   .share_it {
     background-position-x: 25px;
@@ -821,7 +826,8 @@ input[type="submit"] {
   }
 
   .footer{
-    padding-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   h5 {
