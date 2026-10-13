@@ -37,6 +37,7 @@ h1 {
 
 .header > a {
   margin-left: 146px;
+  line-height: 120%;
 }
 
 .nav-bar ul {
@@ -562,6 +563,7 @@ input[type="checkbox"] {
   color: white;
   gap: 4px;
   font-size: 1.125rem;
+  line-height: 120%;
 }
 
 .copyright > img {
@@ -578,6 +580,7 @@ input[type="checkbox"] {
   color: white;
   text-decoration: none;
   font-size: 1.125rem;
+  line-height: 120%;
 }
 
 .links_footer_left {

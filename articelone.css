@@ -17,7 +17,6 @@ html {
   width: 100%;
   background-color: rgba(78, 164, 135, 1);
   position: fixed;
-  touch-action: 0px;
   z-index: 3;
 }
 
@@ -361,9 +360,8 @@ input[type="submit"] {
   gap: 4px;
   font-size: 18px;
 }
-
 .copyright > img {
-  height: 20px;
+  max-height: 20px;
 }
 
 .left-footer {
